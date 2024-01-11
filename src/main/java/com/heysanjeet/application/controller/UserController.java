@@ -20,4 +20,10 @@ public class UserController {
 
         return new ResponseEntity<>(HttpStatus.OK);
     }
+
+    @PostMapping("/updateUser")
+    public ResponseEntity<UserInfo> updateUser(@RequestBody UserInfo userInfo) {
+
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
 }
