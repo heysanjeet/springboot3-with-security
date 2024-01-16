@@ -27,7 +27,6 @@ public class UserServiceImpl implements UserService {
         return optionalUser.get();
     }
 
-    @Override
     public List<UserInfo> getAllUsers() {
         List<UserInfo> allUser = userRepository.findAll();
         return allUser;
