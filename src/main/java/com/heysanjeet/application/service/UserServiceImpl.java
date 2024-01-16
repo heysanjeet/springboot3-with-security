@@ -16,12 +16,12 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserRepository userRepository;
 
-    @Override
+
     public UserInfo saveUser(UserInfo userInfo) {
         return userRepository.save(userInfo);
     }
 
-    @Override
+
     public UserInfo getUserById(Integer userId) {
         Optional<UserInfo> optionalUser = userRepository.findById(userId);
         return optionalUser.get();
