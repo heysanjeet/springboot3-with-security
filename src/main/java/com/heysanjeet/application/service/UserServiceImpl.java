@@ -33,7 +33,7 @@ public class UserServiceImpl implements UserService {
         return allUser;
     }
 
-    @Override
+
     public UserInfo updateUser(UserInfo userInfo) {
         UserInfo existingUser = userRepository.findById(userInfo.getUserId()).get();
         existingUser.setUsername(userInfo.getUsername());
